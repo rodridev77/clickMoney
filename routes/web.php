@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('AdminLTE.index');
+    return view('cliente.index');
 });
+
+Route::get('dash/cliente/transacoes/canceladas', function () {
+    return view('cliente.transacoes.Canceladas');
+})->name("transacao.cancelada");
+
+Route::get('dash/cliente/transacoes/efetivadas', function () {
+    return view('cliente.transacoes.Efetivadas');
+})->name("transacao.efetivada");
+
+Route::get('dash/cliente/home', function () {
+    return view("cliente.home");
+})->name("cliente.home");
