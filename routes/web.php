@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Prophecy\Doubler\Generator\Node\ReturnTypeNode;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
+
 Route::get('/', function () {
-    return view('AdminLTE.index');
+    return view('cliente.index');
 });
 
-Route::get('client/support', "SupportController@index")->name("support.home");
+
+Route::group(['prefix' => 'cliente/dash'], function () {    
+    Route::get('/', function () {
+        return view('cliente.index');
+    });
+    Route::get('/adminlte', function () {
+        return view('AdminLTE.index');
+    });
+
+    Route::get('profile', function () {
+        return view('cliente.profile.profile');
+    })->name("profile");
+    
+    Route::get('transacoes/canceladas', function () {
+        return view('cliente.transacoes.Canceladas');
+    })->name("transacao.cancelada");
+    
+    Route::get('transacoes/efetivadas', function () {
+        return view('cliente.transacoes.Efetivadas');
+    })->name("transacao.efetivada");
+    
+    Route::get('home', function () {
+        return view("cliente.home");
+    })->name("cliente.home");
+
+    Route::get('client/support', function () {
+        return view("support.home");
+    })->name("support.home");
+    
+});
