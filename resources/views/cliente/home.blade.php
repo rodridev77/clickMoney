@@ -26,7 +26,7 @@
             <div class="icon">
                 <i class="fas fa-money-bill-alt"></i>
             </div>
-            <a href="#" class="small-box-footer" >Ver Mais <i
+            <a href="#" class="small-box-footer" onclick="loadViewInSelectContent('{{route('cliente.saldo')}}')">Ver Mais <i
                     class="fas fa-arrow-circle-right"></i></a>
         </div>
     </div>

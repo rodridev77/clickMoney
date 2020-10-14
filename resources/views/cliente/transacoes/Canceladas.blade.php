@@ -3,15 +3,13 @@
         <div class="card-header">
             <h3 class="card-title">Transações Canceladas</h3>
 
-            <div class="card-tools">
-                <ul class="pagination pagination-sm float-right">
-                    <li class="page-item"><a class="page-link text-danger" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link text-danger" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link text-danger" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link text-danger" href="#">&raquo;</a></li>
-                </ul>
-            </div>
+            <div class="card-tools ">
+                <form action="#" class="form-inline">
+                    <label for="id" class="my-1 mr-2">Id da transação</label>
+                    <input type="text" name="id" id="id" class="form-control my-1 mr-sm-2">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </div>          
         </div>
         <!-- /.card-header -->
         <div class="card-body p-0">

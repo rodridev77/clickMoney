@@ -34,7 +34,7 @@
     </ul>
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.saldo')}}')">
         <i class="nav-icon fas fa-money-bill-alt"></i>
         <p>
             Saldo

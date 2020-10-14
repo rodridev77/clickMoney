@@ -22,7 +22,10 @@ Route::get('/', function () {
     return view('cliente.index');
 });
 
-Route::group(['prefix' => 'cliente/dash'], function () {    
+Route::group(['prefix' => 'cliente/dash'], function () {
+    Route::get('saldo', function () {
+        return view("cliente.saldo");
+    })->name('cliente.saldo');
     Route::get('/', function () {
         return view('cliente.index');
     });
