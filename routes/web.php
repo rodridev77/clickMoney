@@ -23,9 +23,15 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'cliente/dash'], function () {
+    
+    Route::get("troca",function(){
+        return view('cliente.trocas.troca');
+    })->name("cliente.trocas");
+
     Route::get('saldo', function () {
         return view("cliente.saldo");
     })->name('cliente.saldo');
+
     Route::get('/', function () {
         return view('cliente.index');
     });

@@ -18,6 +18,9 @@
                   <li class="list-group-item">
                     <b>ID do Cliente</b> <a class="float-right">1322</a>
                   </li>
+                  <li class="list-group-item">
+                    <b>ID da Maquina</b> <a class="float-right">123456</a>
+                  </li>
                   {{-- <li class="list-group-item">
                     <b>Following</b> <a class="float-right">543</a>
                   </li>

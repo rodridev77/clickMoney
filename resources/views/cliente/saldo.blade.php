@@ -18,6 +18,9 @@
                 
                     <label for="termino" class="my-1 mr-2">Término</label>
                     <input type="date" name="" id="termino" class="form-control my-1 mr-sm-2">
+
+                    <label for="termino" class="my-1 mr-2">ID Venda</label>
+                    <input type="text" name="" id="termino" class="form-control my-1 mr-sm-2" placeholder="ID">
                     <div class="float-right">
                         <button class="btn btn-primary">buscar</button>
                     </div>

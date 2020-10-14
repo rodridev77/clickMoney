@@ -54,7 +54,7 @@
 
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.trocas')}}')">
         <i class="nav-icon fas fa-sync-alt"></i>
         <p>
             Trocas
