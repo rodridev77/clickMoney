@@ -1,15 +1,31 @@
 <section class="col-lg-12 connectedSortable">
     <div class="card card-success">
         <div class="card-header">
-            <h3 class="card-title">Transações Efetivadas</h3>
+            <h3 class="card-title">Saldo</h3>
+            <br>
+            <form action="#">
+                <div class="form-inline">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Nos ultimos</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Ultimos 3 dias</option>
+                        <option value="1">Ultima semana</option>
+                        <option value="2">Ultimo Mes</option>
+                        <option value="3">Ultimo Ano</option>
+                    </select>
+                
+                    <label for="inicio" class="my-1 mr-2">Inicio</label>
+                    <input type="date" name="" id="inicio" class="form-control my-1 mr-sm-2">
+                
+                    <label for="termino" class="my-1 mr-2">Término</label>
+                    <input type="date" name="" id="termino" class="form-control my-1 mr-sm-2">
 
-            <div class="card-tools ">
-                <form action="#" class="form-inline">
-                    <label for="id" class="my-1 mr-2">Id da transação</label>
-                    <input type="text" name="id" id="id" class="form-control my-1 mr-sm-2">
-                    <button class="btn btn-primary" type="submit">Buscar</button>
-                </form>
-            </div>
+                    <label for="termino" class="my-1 mr-2">ID Venda</label>
+                    <input type="text" name="" id="termino" class="form-control my-1 mr-sm-2" placeholder="ID">
+                    <div class="float-right">
+                        <button class="btn btn-primary">buscar</button>
+                    </div>
+                </div>        
+            </form>
         </div>
         <!-- /.card-header -->
         <div class="card-body p-0">
