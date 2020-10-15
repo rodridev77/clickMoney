@@ -69,6 +69,6 @@ Route::get('client/support/closed-calls', function () {
     return view("support.closed-calls");
 })->name("support.closed-calls");
 
-Route::get('client/support/show-closed-calls', function () {
-    return view("support.show.closed-calls");
-})->name("support.showclosed-calls");
+Route::get('client/support/show-closed', function () {
+    return view("support.show-closed");
+})->name("support.show-closed");
