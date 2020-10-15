@@ -1,3 +1,4 @@
+/** ##### support ##### **/
 .header-menu
 {
     background-color:#fff;
@@ -172,5 +173,18 @@
 {
     color:rgba(0, 123, 255, .7);
     font-size: 14px;
+    font-weight: 600;
+}
+
+/** ##### histórico transferência ##### **/
+.historico-title
+{
+    text-align: center;
+}
+
+.historico-title h2
+{
+    color:rgba(0, 123, 255, .7);
+    font-size: 24px;
     font-weight: 600;
 }

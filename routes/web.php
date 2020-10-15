@@ -54,21 +54,30 @@ Route::group(['prefix' => 'cliente/dash'], function () {
     Route::get('home', function () {
         return view("cliente.home");
     })->name("cliente.home");
+
+    // support routes client
+    Route::get('support', function () {
+        return view("support.home");
+    })->name("support.home");
     
+    Route::get('support/show', function () {
+        return view("support.show");
+    })->name("support.show");
+    
+    Route::get('support/closed-calls', function () {
+        return view("support.closed-calls");
+    })->name("support.closed-calls");
+    
+    Route::get('support/show-closed', function () {
+        return view("support.show-closed");
+    })->name("support.show-closed");
+
+    Route::get('transferencia/historico/show', function () {
+        return view("transferencia.historico");
+    })->name("transferencia.historico");
+
+    Route::get('transferencia/extrato/show', function () {
+        return view("transferencia.extrato");
+    })->name("transferencia.extrato");
+
 });
-
-Route::get('client/support', function () {
-    return view("support.home");
-})->name("support.home");
-
-Route::get('client/support/show', function () {
-    return view("support.show");
-})->name("support.show");
-
-Route::get('client/support/closed-calls', function () {
-    return view("support.closed-calls");
-})->name("support.closed-calls");
-
-Route::get('client/support/show-closed', function () {
-    return view("support.show-closed");
-})->name("support.show-closed");

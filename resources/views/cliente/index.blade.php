@@ -71,6 +71,15 @@
         </p>
     </a>
 </li>
+
+<li class="nav-item ">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('transferencia.historico')}}')">
+        <i class="nav-icon fas fa-headset"></i>
+        <p>
+            Transferencia/Historico
+        </p>
+    </a>
+</li>
 @endsection  
 
 @section('content')
