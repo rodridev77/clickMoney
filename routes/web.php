@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'cliente/dash'], function () {
 
     Route::get("transferencias",function(){
-        return view('cliente.tranferencia.transferencia');
+        return view('cliente.transferencia.transferencia');
     })->name("cliente.transferencia");
     
     Route::get("troca",function(){
@@ -77,11 +77,11 @@ Route::group(['prefix' => 'cliente/dash'], function () {
     })->name("support.show-closed");
 
     Route::get('transferencia/historico/show', function () {
-        return view("transferencia.historico");
+        return view("cliente.transferencia.historico");
     })->name("transferencia.historico");
 
     Route::get('transferencia/extrato/show', function () {
-        return view("transferencia.extrato");
+        return view("cliente.transferencia.extrato");
     })->name("transferencia.extrato");
 
 });

@@ -1,5 +1,13 @@
 <div class="container-fluid historico">
     <div class="row">
+        <div class="col-sm-12">
+            <a href="#" onclick="loadViewInSelectContent('{{route('cliente.transferencia')}}')">
+                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span style="margin-left:5px">voltar</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-sm-12 historico-title">
             <h2>Histórico de Transferência</h2>
         </div>

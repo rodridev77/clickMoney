@@ -1,3 +1,13 @@
+<div class="container-fluid" style="margin-top: -10px; margin-bottom:10px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="#" onclick="loadViewInSelectContent('{{route('support.closed-calls')}}')">
+                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span style="margin-left:5px">voltar</span>
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid show-call">
     <div class="row header-info">
         <div class="col-sm-6 client-info">

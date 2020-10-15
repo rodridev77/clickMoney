@@ -14,7 +14,7 @@
                 <h3 class="card-title">Transferir</h3>
             </div>
             <div class="card-body">
-                <button class="btn btn-info my-2">Historico</button>
+                <button class="btn btn-info my-2" onclick="loadViewInSelectContent('{{route('transferencia.historico')}}')">Historico</button>
                 <button class="btn btn-info my-2" onclick="loadSupportForm();">Nova Conta</button>
                     <div class="col-md-12">
                         <div class="card">
