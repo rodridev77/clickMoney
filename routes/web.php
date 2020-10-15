@@ -20,6 +20,10 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
+Route::get('/cadastro', function () {
+    return view('auth.cadastro');
+});
+
 Route::get('/', function () {
     return view('cliente.index');
 });
