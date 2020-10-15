@@ -16,7 +16,9 @@ use Prophecy\Doubler\Generator\Node\ReturnTypeNode;
 
 
 
-
+Route::get('/login', function () {
+    return view('auth.login');
+});
 
 Route::get('/', function () {
     return view('cliente.index');
