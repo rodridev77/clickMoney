@@ -12,21 +12,12 @@
 
                 <h3 class="profile-username text-center">Alexander Pierce</h3>
 
-                <p class="text-muted text-center">Cliente</p>
+                <p class="text-muted text-center">Admin</p>
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>ID do Cliente</b> <a class="float-right">1322</a>
+                    <b>ID do admin</b> <a class="float-right">1322</a>
                   </li>
-                  <li class="list-group-item">
-                    <b>ID da Maquina</b> <a class="float-right">123456</a>
-                  </li>
-                  {{-- <li class="list-group-item">
-                    <b>Following</b> <a class="float-right">543</a>
-                  </li>
-                  <li class="list-group-item">
-                    <b>Friends</b> <a class="float-right">13,287</a>
-                  </li> --}}
                 </ul>
               </div>
               <!-- /.card-body -->

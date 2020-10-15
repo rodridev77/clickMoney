@@ -1,15 +1,14 @@
 @extends('dashboard-template')
-
 @section('profile')
 <div class="info">
-    <a href="#" class="d-block" onclick="loadViewInSelectContent('{{route('profile')}}')">Alexander
+    <a href="#" class="d-block" onclick="loadViewInSelectContent('{{route('admin.profile')}}')">Alexander
         Pierce</a>
 </div>
-@endsection  
-
+@endsection
+    
 @section('nav-items')
 <li class="nav-item ">
-    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.home')}}')">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.home')}}')">
         <i class="nav-icon fas fa-home"></i>
         <p>
             inicio
@@ -28,13 +27,13 @@
     </a>
     <ul class="nav nav-treeview">
       <li class="nav-item">
-        <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('transacao.efetivada')}}')">
+        <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.transacao.efetivada')}}')">
           <i class="far fa-circle nav-icon text-success"></i>
           <p>Efetivadas</p>
         </a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('transacao.cancelada')}}')">
+        <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.transacao.cancelada')}}')">
           <i class="far fa-circle nav-icon text-danger"></i>
           <p>Canceladas</p>
         </a>
@@ -42,7 +41,7 @@
     </ul>
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.saldo')}}')">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.saldo')}}')">
         <i class="nav-icon fas fa-money-bill-alt"></i>
         <p>
             Saldo
@@ -50,7 +49,7 @@
     </a>
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.transferencia')}}')">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.transferencia')}}')">
         <i class="nav-icon fas fa-exchange-alt"></i>
         <p>
             Transferencias
@@ -60,7 +59,7 @@
 
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.trocas')}}')">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.trocas')}}')">
         <i class="nav-icon fas fa-sync-alt"></i>
         <p>
             Trocas
@@ -79,5 +78,5 @@
 @endsection  
 
 @section('content')
-    @include('cliente.home')
+    @include('admin.home')
 @endsection
