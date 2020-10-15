@@ -68,13 +68,39 @@ Route::group(['prefix' => 'admin/dash'], function () {
     Route::get('home', function () {
         return view("admin.home");
     })->name("admin.home");
+
+    // support routes admin
+    Route::get('support', function () {
+        return view("admin.support.home");
+    })->name("admin.support.home");
+    
+    Route::get('support/show', function () {
+        return view("admin.support.show");
+    })->name("admin.support.show");
+    
+    Route::get('support/closed-calls', function () {
+        return view("admin.support.closed-calls");
+    })->name("admin.support.closed-calls");
+    
+    Route::get('support/show-closed', function () {
+        return view("admin.support.show-closed");
+    })->name("admin.support.show-closed");
+
+    // support routes extrato admin
+    Route::get('transferencia/historico/show', function () {
+        return view("admin.transferencia.historico");
+    })->name("admin.transferencia.historico");
+
+    Route::get('transferencia/extrato/show', function () {
+        return view("admin.transferencia.extrato");
+    })->name("admin.transferencia.extrato");
     
 });
 
 Route::group(['prefix' => 'cliente/dash'], function () {
 
     Route::get("transferencias",function(){
-        return view('cliente.tranferencia.transferencia');
+        return view('cliente.transferencia.transferencia');
     })->name("cliente.transferencia");
     
     Route::get("troca",function(){
@@ -107,21 +133,31 @@ Route::group(['prefix' => 'cliente/dash'], function () {
     Route::get('home', function () {
         return view("cliente.home");
     })->name("cliente.home");
+
+    // support routes client
+    Route::get('support', function () {
+        return view("support.home");
+    })->name("support.home");
     
+    Route::get('support/show', function () {
+        return view("support.show");
+    })->name("support.show");
+    
+    Route::get('support/closed-calls', function () {
+        return view("support.closed-calls");
+    })->name("support.closed-calls");
+    
+    Route::get('support/show-closed', function () {
+        return view("support.show-closed");
+    })->name("support.show-closed");
+
+    // support routes extrato client
+    Route::get('transferencia/historico/show', function () {
+        return view("cliente.transferencia.historico");
+    })->name("transferencia.historico");
+
+    Route::get('transferencia/extrato/show', function () {
+        return view("cliente.transferencia.extrato");
+    })->name("transferencia.extrato");
+
 });
-
-Route::get('client/support', function () {
-    return view("support.home");
-})->name("support.home");
-
-Route::get('client/support/show', function () {
-    return view("support.show");
-})->name("support.show");
-
-Route::get('client/support/closed-calls', function () {
-    return view("support.closed-calls");
-})->name("support.closed-calls");
-
-Route::get('client/support/show-closed', function () {
-    return view("support.show-closed");
-})->name("support.show-closed");

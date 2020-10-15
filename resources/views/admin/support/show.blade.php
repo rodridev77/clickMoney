@@ -1,8 +1,9 @@
 <div class="container-fluid" style="margin-top: -10px; margin-bottom:10px;">
     <div class="row">
         <div class="col-sm-12">
-            <a href="#" onclick="loadViewInSelectContent('{{route('support.home')}}')">
-                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span style="margin-left:5px">voltar</span>
+            <a href="#" onclick="loadViewInSelectContent('{{route('admin.support.home')}}')">
+                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span
+                    style="margin-left:5px">voltar</span>
             </a>
         </div>
     </div>
@@ -107,6 +108,10 @@
                     <div class="col-sm-12 call-btns-box">
                         <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>
                         <button class="btn btn-primary">Encerrar chamado</button>
+                        <select class="form-control select-call" style="max-width: 200px; display:inline;">
+                            <option value="">Aberto</option>
+                            <option value="">Concluido</option>
+                        </select>
                     </div>
                 </div>
             </form>

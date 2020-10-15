@@ -68,7 +68,7 @@
 
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('support.home')}}')">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.support.home')}}')">
         <i class="nav-icon fas fa-headset"></i>
         <p>
             Suporte
