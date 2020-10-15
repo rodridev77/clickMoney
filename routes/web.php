@@ -23,6 +23,10 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'cliente/dash'], function () {
+
+    Route::get("transferencias",function(){
+        return view('cliente.tranferencia.transferencia');
+    })->name("cliente.transferencia");
     
     Route::get("troca",function(){
         return view('cliente.trocas.troca');

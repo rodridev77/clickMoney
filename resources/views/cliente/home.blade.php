@@ -39,10 +39,10 @@
 
                 <p>Transferencia de Saldo</p>
             </div>
-            <div class="icon">
+            <div class="icon ">
                 <i class="fas fa-exchange-alt"></i>
             </div>
-            <a href="#" class="small-box-footer">Ver Mais <i
+            <a href="#" class="small-box-footer" onclick="loadViewInSelectContent('{{route('cliente.transferencia')}}')">Ver Mais <i
                     class="fas fa-arrow-circle-right"></i></a>
         </div>
     </div>
