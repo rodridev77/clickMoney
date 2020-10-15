@@ -62,6 +62,32 @@ Route::group(['prefix' => 'admin/dash'], function () {
     Route::get('home', function () {
         return view("admin.home");
     })->name("admin.home");
+
+    // support routes admin
+    Route::get('support', function () {
+        return view("admin.support.home");
+    })->name("admin.support.home");
+    
+    Route::get('support/show', function () {
+        return view("admin.support.show");
+    })->name("admin.support.show");
+    
+    Route::get('support/closed-calls', function () {
+        return view("admin.support.closed-calls");
+    })->name("admin.support.closed-calls");
+    
+    Route::get('support/show-closed', function () {
+        return view("admin.support.show-closed");
+    })->name("admin.support.show-closed");
+
+    // support routes extrato admin
+    Route::get('transferencia/historico/show', function () {
+        return view("admin.transferencia.historico");
+    })->name("admin.transferencia.historico");
+
+    Route::get('transferencia/extrato/show', function () {
+        return view("admin.transferencia.extrato");
+    })->name("admin.transferencia.extrato");
     
 });
 
@@ -119,6 +145,7 @@ Route::group(['prefix' => 'cliente/dash'], function () {
         return view("support.show-closed");
     })->name("support.show-closed");
 
+    // support routes extrato client
     Route::get('transferencia/historico/show', function () {
         return view("cliente.transferencia.historico");
     })->name("transferencia.historico");
