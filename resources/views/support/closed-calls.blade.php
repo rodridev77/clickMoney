@@ -18,46 +18,48 @@
 <nav class="navbar navbar-expand-lg">
     <ul class="navbar-nav mr-auto navbar-box">
         <li class="nav-item active">
-            <a class="nav-link active" href="#" id="pendente" style="color: #007bff; border-bottom: 2px solid #007bff;">Pendentes <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" id="pendente"
+                style="" onclick="loadViewInSelectContent('{{route('support.home')}}')">Pendentes <span
+                    class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" id="finalizado" onclick="loadViewInSelectContent('{{route('support.closed-calls')}}')">Finalizados <span class="sr-only">(current)</span></a>
+        <li class="nav-item active">
+            <a class="nav-link" href="#" id="finalizado" style="color: #007bff; border-bottom: 2px solid #007bff;">Finalizados <span class="sr-only">(current)</span></a>
         </li>
     </ul>
 </nav>
 
-<div class="container-fluid list-items-call closed-item">
+<div class="container-fluid list-items-call finished-item">
     <div class="row">
         <div class="col-sm-3 client-id">
             <div class="text">Fulano Tal</div>
-            <div class="status closed">Concluido</div>
+            <div class="status finished">Encerrado</div>
         </div>
         <div class="col-sm-3 call-subject">
             Troca de máquina
         </div>
         <div class="col-sm-3 call-time">
-            21 horas
+            2 dias
         </div>
         <div class="col-sm-3 view-call">
-            <a href="#" onclick="loadViewInSelectContent('{{route('support.show')}}')">Ver Chamado</a>
+            <a href="#" onclick="loadViewInSelectContent('{{route('support.show-closed')}}')">Ver Chamado</a>
         </div>
     </div>
 </div>
 
-<div class="container-fluid list-items-call opened-item">
+<div class="container-fluid list-items-call finished-item">
     <div class="row">
         <div class="col-sm-3 client-id">
             <div class="text">Sicrano Tal</div>
-            <div class="status opened">Aberto</div>
+            <div class="status finished">Encerrado</div>
         </div>
         <div class="col-sm-3 call-subject">
             Solicitar reparo
         </div>
         <div class="col-sm-3 call-time">
-            21 horas
+            20 dias
         </div>
         <div class="col-sm-3 view-call">
-            <a href="#" onclick="loadViewInSelectContent('{{route('support.show')}}')">Ver Chamado</a>
+            <a href="#" onclick="loadViewInSelectContent('{{route('support.show-closed')}}')">Ver Chamado</a>
         </div>
     </div>
 </div>

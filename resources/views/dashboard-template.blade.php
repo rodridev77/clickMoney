@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('./assets/css/style.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -41,9 +43,14 @@
                 </li>
             </ul>
 
+            <div class="title-area" style="width: 100%; text-align: center">
+                <h2 style="font-size: 20px; color: rgba(1,1,1,.6); font-weight: 600; line-height: 30px; padding-top: 10px">Área do Cliente</h2>
+            </div>
+
             <!-- SEARCH FORM -->
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
+
                 <!-- Messages Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -146,8 +153,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
-                <img src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                <img src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">ClickMoney</span>
             </a>
 
@@ -156,10 +163,12 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                        <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2"
+                            alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block" onclick="loadViewInSelectContent('{{route('profile')}}')">Alexander Pierce</a>
+                        <a href="#" class="d-block" onclick="loadViewInSelectContent('{{route('profile')}}')">Alexander
+                            Pierce</a>
                     </div>
                 </div>
 
@@ -182,9 +191,9 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h4 class="m-0 text-dark">Area do Cliente</h4>
+                            <!-- <h4 class="m-0 text-dark">Area do Cliente</h4> !-->
                         </div><!-- /.col -->
-                        
+
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
@@ -200,16 +209,16 @@
             </section>
             <!-- /.content -->
         </div>
-            <!-- /.content-wrapper -->
-            <footer class="main-footer">
-                <strong>Copyright &copy; 2020 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-                All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                    <b>Version</b> 3.0.5
-                </div>
-            </footer>
-            
-            <!-- Control Sidebar -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2020 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+            All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Version</b> 3.0.5
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
         </aside>
@@ -223,8 +232,7 @@
     <script src="{{asset('plugins/jquery-ui/jquery-ui.min.js')}}"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-        $.widget.bridge('uibutton', $.ui.button)
-
+    $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
     <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -254,26 +262,30 @@
     <script src="{{asset('dist/js/demo.js')}}"></script>
 
     <script>
-        $(document).ready(function () {
-            $("#sidemenu ul > li >a").click(function (e) {
-                e.preventDefault();
-                $("a").removeClass("active");
-                $(this).tab('show');
-            });
+    $(document).ready(function() {
+        $("#sidemenu ul > li >a").click(function(e) {
+            e.preventDefault();
+            $("a").removeClass("active");
+            $(this).tab('show');
         });
+    });
 
-        function loadViewInHome(url) {
-            $.get(url, function (data) {
-                $("#home_menu_container").html(data);
-            });
-        }
-    
-        function loadViewInSelectContent(url) {
-            $.get(url, function (data) {
-                $("#selected_content_container").html(data);
-            });
-        }
-</script>    
+    function loadViewInHome(url) {
+        $.get(url, function(data) {
+            $("#home_menu_container").html(data);
+        });
+    }
+
+    function loadViewInSelectContent(url) {
+        $.get(url, function(data) {
+            $("#selected_content_container").html(data);
+        });
+    }
+
+    function loadSupportForm() {
+        $('#create-support-form').modal('show');
+    }
+    </script>
 </body>
 
 </html>

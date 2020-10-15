@@ -50,5 +50,17 @@ Route::group(['prefix' => 'cliente/dash'], function () {
     Route::get('client/support', function () {
         return view("support.home");
     })->name("support.home");
+
+    Route::get('client/support/show', function () {
+        return view("support.show");
+    })->name("support.show");
+
+    Route::get('client/support/closed-calls', function () {
+        return view("support.closed-calls");
+    })->name("support.closed-calls");
+
+    Route::get('client/support/show-closed', function () {
+        return view("support.show-closed");
+    })->name("support.show-closed");
     
 });

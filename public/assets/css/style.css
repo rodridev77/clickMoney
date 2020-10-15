@@ -1,0 +1,176 @@
+.header-menu
+{
+    background-color:#fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.header-menu-box
+{
+    display: flex;
+    max-width: 400px;
+}
+
+.list-call
+{
+    font-size: 24px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: rgba(1,1,1,.7);
+}
+
+.navbar
+{
+    background-color: #fff;
+    padding: 0;
+}
+
+#pendente, #finalizado
+{
+    color: rgba(0, 123, 255, .7);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.closed-item, .opened-item
+{
+    border-left: 2px solid green;
+}
+
+.opened-item
+{
+    border-left: 2px solid orange;
+}
+
+.finished-item
+{
+    border-left: 2px solid purple;
+}
+
+.list-items-call
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    margin-top: 7px;
+    vertical-align: middle;
+}
+
+.status.closed
+{
+    text-align: center;
+    font-size: 12px;
+    background-color: green;
+    max-width: 80px;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.status.opened
+{
+    text-align: center;
+    font-size: 12px;
+    background-color: orange;
+    max-width: 80px;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.status.finished
+{
+    
+    text-align: center;
+    font-size: 12px;
+    background-color: purple;
+    max-width: 80px;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.call-subject, .call-time, .view-call
+{
+    line-height: 50px;
+}
+
+.modal-header.support-title-bar
+{
+    background-color: rgba(0, 123, 255, .7);
+    color: #fff;
+    font-weight: 500;
+}
+
+/** ##### show support ##### **/
+
+.show-call
+{
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+    color: rgba(0, 123, 255, .7);
+}
+
+.header-info
+{
+    border-bottom: 1px solid #d4d4d4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.info-photo img
+{
+    width: 40px;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+}
+
+.client-name
+{
+    padding-left: 10px;
+}
+
+.client-name, .opened-at, .closed-at
+{
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.message-box
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.support-answer
+{
+    background-color: #f5f5dc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.me-answer
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn-close-call
+{
+    padding-top: 10px;
+}
+
+.call-btns-box
+{
+    margin-top: 10px;
+}
+
+.author
+{
+    color:rgba(0, 123, 255, .7);
+    font-size: 14px;
+    font-weight: 600;
+}
