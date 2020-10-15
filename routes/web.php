@@ -22,6 +22,49 @@ Route::get('/', function () {
     return view('cliente.index');
 });
 
+Route::group(['prefix' => 'admin/dash'], function () {
+
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+
+    Route::get("transferencias",function(){
+        return view('admin.tranferencia.transferencia');
+    })->name("admin.transferencia");
+    
+    Route::get("troca",function(){
+        return view('admin.trocas.troca');
+    })->name("admin.trocas");
+
+    Route::get('saldo', function () {
+        return view("admin.saldo");
+    })->name('admin.saldo');
+
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+    Route::get('/adminlte', function () {
+        return view('AdminLTE.index');
+    });
+
+    Route::get('profile', function () {
+        return view('admin.profile.profile');
+    })->name("admin.profile");
+    
+    Route::get('transacoes/canceladas', function () {
+        return view('admin.transacoes.Canceladas');
+    })->name("admin.transacao.cancelada");
+    
+    Route::get('transacoes/efetivadas', function () {
+        return view('admin.transacoes.Efetivadas');
+    })->name("admin.transacao.efetivada");
+    
+    Route::get('home', function () {
+        return view("admin.home");
+    })->name("admin.home");
+    
+});
+
 Route::group(['prefix' => 'cliente/dash'], function () {
 
     Route::get("transferencias",function(){
