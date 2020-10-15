@@ -38,13 +38,11 @@
         <i class="nav-icon fas fa-money-bill-alt"></i>
         <p>
             Saldo
-
         </p>
     </a>
-
 </li>
 <li class="nav-item ">
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('cliente.transferencia')}}')">
         <i class="nav-icon fas fa-exchange-alt"></i>
         <p>
             Transferencias
@@ -58,7 +56,6 @@
         <i class="nav-icon fas fa-sync-alt"></i>
         <p>
             Trocas
-
         </p>
     </a>
 
