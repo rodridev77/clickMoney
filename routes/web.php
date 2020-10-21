@@ -25,7 +25,7 @@ Route::get('/cadastro', function () {
 });
 
 Route::get('/', function () {
-    return view('cliente.index');
+    return view('cliente.index',["tituloArea"=>"Area do Cliente"]);
 });
 
 Route::group(['prefix' => 'admin/dash'], function () {
@@ -37,17 +37,25 @@ Route::group(['prefix' => 'admin/dash'], function () {
     Route::get("transferencias",function(){
         return view('admin.tranferencia.transferencia');
     })->name("admin.transferencia");
+
+    Route::get("transferencias/pedido",function(){
+        return view('admin.tranferencia.pedido');
+    })->name("transferencia.pedido");
     
     Route::get("troca",function(){
         return view('admin.trocas.troca');
     })->name("admin.trocas");
+
+    Route::get("troca/extrato",function(){
+        return view('admin.trocas.extrato');
+    })->name("admin.trocas.extrato");
 
     Route::get('saldo', function () {
         return view("admin.saldo");
     })->name('admin.saldo');
 
     Route::get('/', function () {
-        return view('admin.index');
+        return view('admin.index',["tituloArea"=>"Area do Administrador"]);
     });
     Route::get('/adminlte', function () {
         return view('AdminLTE.index');
@@ -64,6 +72,19 @@ Route::group(['prefix' => 'admin/dash'], function () {
     Route::get('transacoes/efetivadas', function () {
         return view('admin.transacoes.Efetivadas');
     })->name("admin.transacao.efetivada");
+    
+    // novas rotas
+    
+    Route::get('transacoes/vendas/canceladas', function () {
+        return view('admin.transacoes.vendasCanceladas');
+    })->name("transacao.vendas.canceladas");
+    
+    Route::get('transacoes/vendas/efetivadas', function () {
+        return view('admin.transacoes.vendas');
+    })->name("transacao.vendas.efetivadas");
+    
+    // ==
+    
     
     Route::get('home', function () {
         return view("admin.home");
@@ -94,6 +115,24 @@ Route::group(['prefix' => 'admin/dash'], function () {
     Route::get('transferencia/extrato/show', function () {
         return view("admin.transferencia.extrato");
     })->name("admin.transferencia.extrato");
+    
+    // integracao routes admin
+    Route::get('integracao/', function () {
+        return view("admin.integracao.integracao");
+    })->name("admin.integracao");
+
+    Route::get('transferencia/extrato/show', function () {
+        return view("admin.transferencia.extrato");
+    })->name("admin.transferencia.extrato");
+    
+    // clients routes admin
+    Route::get('cliente/profile', function () {
+        return view('admin.clientes.profile');
+    })->name("admin.cliente.profile");      
+
+    Route::get('clientes', function () {
+        return view('admin.clientes.list-clientes');
+    })->name("admin.clientes");
     
 });
 

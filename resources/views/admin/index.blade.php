@@ -17,6 +17,25 @@
     </a>
 
 </li>
+
+<li class="nav-item ">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.clientes')}}')">
+        <i class="nav-icon fas fa-users"></i>
+        <p>
+            Clientes
+        </p>
+    </a>
+</li>
+
+<li class="nav-item ">
+    <a href="#" class="nav-link" onclick="loadViewInSelectContent('{{route('admin.integracao')}}')">
+        <i class="fas fa-check"></i>
+        <p>
+            Integrações
+        </p>
+    </a>
+</li>
+
 <li class="nav-item ">
     <a href="#" class="nav-link has-treeview">
         <i class="nav-icon ion ion-bag"></i>

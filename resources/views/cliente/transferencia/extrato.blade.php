@@ -2,7 +2,8 @@
     <div class="row">
         <div class="col-sm-12">
             <a href="#" onclick="loadViewInSelectContent('{{route('transferencia.historico')}}')">
-                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span style="margin-left:5px">voltar</span>
+                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span
+                    style="margin-left:5px">voltar</span>
             </a>
         </div>
     </div>
@@ -13,6 +14,7 @@
         </div>
     </div>
 
+<div class="table-responsive">
     <table class="table table-striped">
         <thead>
             <tr>
@@ -35,4 +37,5 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </div>

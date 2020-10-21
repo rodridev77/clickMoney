@@ -2,13 +2,19 @@
     <div class="row">
         <div class="col-sm-12">
             <a href="#" onclick="loadViewInSelectContent('{{route('support.home')}}')">
-                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span style="margin-left:5px">voltar</span>
+                <i class='fas fa-arrow-left' style='font-size:16px;color: rgba(0, 123, 255, .7);'></i><span
+                    style="margin-left:5px">voltar</span>
             </a>
         </div>
     </div>
 </div>
 
 <div class="container-fluid show-call">
+    <div class="row">
+        <div class="col-sm-12">
+            Ticket: <span style='font-size:16px;color: rgba(1, 1, 1, .7);'>#173272</span>
+        </div>
+    </div>
     <div class="row header-info">
         <div class="col-sm-6 client-info">
             <div class="row">

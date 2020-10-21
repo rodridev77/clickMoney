@@ -42,8 +42,9 @@
             <div class="icon ">
                 <i class="fas fa-exchange-alt"></i>
             </div>
-            <a href="#" class="small-box-footer" onclick="loadViewInSelectContent('{{route('admin.transferencia')}}')">Ver Mais <i
-                    class="fas fa-arrow-circle-right"></i></a>
+            <a href="#" class="small-box-footer" onclick="loadViewInSelectContent('{{route('admin.transferencia')}}')"><span class="text-white">Ver Mais <i
+                class="fas fa-arrow-circle-right"></i>
+            </span></a>
         </div>
     </div>
     <!-- ./col -->
@@ -61,6 +62,19 @@
             <a href="#" class="small-box-footer" onclick="loadViewInSelectContent('{{route('admin.trocas')}}')">Ver Mais <i
                     class="fas fa-arrow-circle-right"></i></a>
         </div>
+    </div>
+    
+    <div class="container">
+          <div class="container">
+        <div class="card">
+  <h1 class="card-header">Taxas</h1>
+  <div class="card-body">
+    <h2 class="card-title">Valores de taxa vão ser adicioonados</h2>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
     </div>
     <!-- ./col -->
 </div>

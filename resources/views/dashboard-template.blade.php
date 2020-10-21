@@ -12,19 +12,14 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="{{asset('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
     <!-- iCheck -->
-    <link rel="stylesheet" href="{{asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="{{asset('plugins/jqvmap/jqvmap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{asset('plugins/daterangepicker/daterangepicker.css')}}">
     <!-- summernote -->
-    <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -35,7 +30,7 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light border-bottom-0">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -44,7 +39,7 @@
             </ul>
 
             <div class="title-area" style="width: 100%; text-align: center">
-                <h2 style="font-size: 20px; color: rgba(1,1,1,.6); font-weight: 600; line-height: 30px; padding-top: 10px">Área do Cliente</h2>
+               <h2 style="font-size: 20px; color: rgba(1,1,1,.6); font-weight: 600; line-height: 30px; padding-top: 10px">{{$tituloArea}}</h2>
             </div>
 
             <!-- SEARCH FORM -->
@@ -140,11 +135,6 @@
                         <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                    </a>
-                </li>
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -170,8 +160,8 @@
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                <nav id="sidemenu" class="mt-2">
+                    <ul  class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         @yield('nav-items')
                     </ul>
@@ -208,10 +198,10 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2020 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+            <strong> <a href="#" onclick="loadViewInSelectContent('{{route('admin.home')}}')">ClickMoney</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.0.5
+                <b></b>
             </div>
         </footer>
 
@@ -234,38 +224,22 @@
     <!-- Bootstrap 4 -->
     <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- ChartJS -->
-    <script src="{{asset('plugins/chart.js/Chart.min.js')}}"></script>
     <!-- Sparkline -->
-    <script src="{{asset('plugins/sparklines/sparkline.js')}}"></script>
     <!-- JQVMap -->
-    <script src="{{asset('plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-    <script src="{{asset('plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
     <!-- jQuery Knob Chart -->
-    <script src="{{asset('plugins/jquery-knob/jquery.knob.min.js')}}"></script>
     <!-- daterangepicker -->
-    <script src="{{asset('plugins/moment/moment.min.js')}}"></script>
-    <script src="{{asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="{{asset('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
     <!-- Summernote -->
-    <script src="{{asset('plugins/summernote/summernote-bs4.min.js')}}"></script>
     <!-- overlayScrollbars -->
     <script src="{{asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('dist/js/adminlte.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
+    {{-- <script src="{{asset('dist/js/pages/dashboard.js')}}"></script> --}}
     <!-- AdminLTE for demo purposes -->
-    <script src="{{asset('dist/js/demo.js')}}"></script>
 
     <script>
-    $(document).ready(function() {
-        $("#sidemenu ul > li >a").click(function(e) {
-            e.preventDefault();
-            $("a").removeClass("active");
-            $(this).tab('show');
-        });
-    });
 
     function loadViewInHome(url) {
         $.get(url, function(data) {
@@ -281,6 +255,14 @@
 
     function loadSupportForm() {
         $('#create-support-form').modal('show');
+    }
+
+    function loadTransferenciaForm() {
+        $('#create-transferencia-form').modal('show');
+    }
+    
+    function loadIntegracaoForm() {
+        $('#create-integracao-form').modal('show');
     }
     </script>
 </body>

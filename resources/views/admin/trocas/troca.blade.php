@@ -1,101 +1,84 @@
-<div class="row">
-    <!-- left column -->
-    <div class="col-md-6">
-        <!-- general form elements -->
-        <div class="card card-primary">
-            <div class="card-header">
-                <h3 class="card-title">Solicitações de Troca</h3>
+<div class="container-fluid troca">
+    <div class="row">
+        <div class="col-sm-6 solicitacao-troca">
+            <div class="header-solicitacao-troca">
+                Solicitação de Trocas
             </div>
-            <!-- /.card-header -->
-            <!-- form start -->
-            <form role="form">
-                <div class="card-body">
-                    <table class="table text-center">
-                        <thead>
-                            <tr>
-                                <th style="">#id maquina</th>
-                                <th>nome</th>
-                                <th>data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020 10:00:00</td>
-                                <td>Fulano</td>
-                            </tr>                     
-                        </tbody>
-                    </table>
+            <div class="troca-container">
+                <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data Solicitação</th>
+                            <th scope="col">#ID Máquina</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25/04/2020</td>
+                            <td>0000762</td>
+                            <td class="detalhes">
+                                <a href="#" onclick="loadViewInSelectContent('{{route('admin.trocas.extrato')}}')">Ver
+                                    detalhes</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30/04/2020</td>
+                            <td>0000872</td>
+                            <td class="detalhes">
+                                <a href="#" onclick="loadViewInSelectContent('{{route('admin.trocas.extrato')}}')">Ver
+                                    detalhes</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21/07/2020</td>
+                            <td>0000187</td>
+                            <td class="detalhes">
+                                <a href="#" onclick="loadViewInSelectContent('{{route('admin.trocas.extrato')}}')">Ver
+                                    detalhes</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 </div>
-            </form>
+            </div>
+        </div>
+
+        <div class="col-sm-6 historico-troca">
+            <div class="header-historico-troca">
+                Histórico de Trocas
+            </div>
+            <div class="troca-container">
+                <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#id maquina</th>
+                            <th>data</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456.</td>
+                            <td>14/10/2020</td>
+                            <td>Pendente</td>
+                        </tr>
+                        <tr>
+                            <td>123456.</td>
+                            <td>14/10/2020</td>
+                            <td>Concluido</td>
+                        </tr>
+                        <tr>
+                            <td>123456.</td>
+                            <td>14/10/2020</td>
+                            <td>concluido</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="col-md-6">
-        <!-- general form elements -->
-        <div class="card card-primary">
-            <div class="card-header">
-                <h3 class="card-title">Histórico de trocas</h3>
-            </div>
-            <!-- /.card-header -->
-            <!-- form start -->
-                <div class="card-body">
-                    <table class="table text-center">
-                        <thead>
-                            <tr>
-                                <th style="">#id maquina</th>
-                                <th>data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020</td>
-                            </tr>                     
-                            <tr>
-                                <td>123456.</td>
-                                <td>14/10/2020</td>
-                            </tr>                     
-                        </tbody>
-                    </table>
-                </div>
-    </div>
+</div>

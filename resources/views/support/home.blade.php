@@ -29,7 +29,7 @@
 <div class="container-fluid list-items-call closed-item">
     <div class="row">
         <div class="col-sm-3 client-id">
-            <div class="text">Fulano Tal</div>
+            <div class="text">#173272</div>
             <div class="status closed">Concluido</div>
         </div>
         <div class="col-sm-3 call-subject">
@@ -47,7 +47,7 @@
 <div class="container-fluid list-items-call opened-item">
     <div class="row">
         <div class="col-sm-3 client-id">
-            <div class="text">Sicrano Tal</div>
+            <div class="text">#218954</div>
             <div class="status opened">Aberto</div>
         </div>
         <div class="col-sm-3 call-subject">
