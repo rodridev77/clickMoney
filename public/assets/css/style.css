@@ -114,6 +114,24 @@
     color: rgba(0, 123, 255, .7);
 }
 
+.select-call {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .header-info
 {
     border-bottom: 1px solid #d4d4d4;
@@ -187,4 +205,111 @@
     color:rgba(0, 123, 255, .7);
     font-size: 24px;
     font-weight: 600;
+}
+
+/** ##### saldo ##### **/
+.saldo
+{
+    background-color: #28a745;
+    border-radius: 3px 3px 0px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    box-shadow: 5px 5px 2px #0d730d ;
+}
+.header-menu-saldo
+{
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.data-cont
+{
+    margin-top: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;  
+    background-color: #fff; 
+    color: rgba(1,1,1,.6);
+}
+
+/** ##### transferencia ##### **/
+.transferencia-title-bar
+{
+    background-color: #343a40;
+    color: #fff;
+}
+
+.card
+{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.transferencia-link
+{
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+.trasnferencia-hitorico, .nova-conta
+{
+    border-bottom: 1px solid transparent;
+}
+
+.trasnferencia-hitorico a, .nova-conta a
+{
+    color: #007bff;
+}
+
+.nova-conta
+{
+    margin-left: 10px;
+}
+
+.nova-conta:hover, .trasnferencia-hitorico:hover
+{
+    border-bottom: 1px solid #007bff;;
+}
+
+.filtro-efetivas
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.search-efetivas
+{
+    max-width: 400px;
+}
+
+.container-canceladas
+{
+    background-color: #dc3545;
+    border-radius: 3px 3px 0px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.troca-container
+{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.header-solicitacao-troca, .header-historico-troca
+{
+    background-color: #4682B4;
+    border-radius: 3px 3px 0px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 10px;
 }
